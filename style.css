@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", sans-serif;
+}
+
+/* Header Design */
+header{
+    width: 100%;
+    position: relative;
+    background: transparent;
+    top: 2rem;
+}
+nav{
+    width: 80%;
+    background-color: white;
+    border-radius: 12px;
+    border: none;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+.nav-links{
+    display: flex;
+    gap: 5rem;
+
+}
+.nav-links a{
+    text-decoration: none;
+    color: #262626;
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: all 0.3s;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+   
+}
+.nav-links a.active{
+    color:#65AEF2 ;
+}
+.nav-links a:hover{
+    background-color: #65AEF2;
+    color: aliceblue;
+}
+.logo img{
+    width: 70px;
+    height: 42px;
+    color: #262626;
+    background: none;
+}
+/* Hero design */
+.hero{
+    background-image: url('images/Image\ \(1\).png');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.hero-content h1{
+    color: white;
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: left;
+    width: 40%;
+    margin-left: 11rem;
+    line-height: 1.6;
+    margin-top: 26rem;
+    
+}
+.dot{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* top: 0; */
+    margin:0 auto;
+    /* width: 4rem; */
+    height: 2rem;
+    display: flex;
+    gap: 0.5rem;
+    /* border: 3px solid black; */
+    align-items: center;
+    justify-content: center;
+}
+.dots{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: white;
+   
+}
+.dots.active{
+    background-color: #65AEF2;
+}
+
+/* Book Design */
+
+.book{
+    width: 100%;
+    background-color: white;
+    padding: 3rem;
+    position: absolute;
+    bottom: -25.5rem;
+}
+.room-book{
+    width: 80%;
+    background-color: #E9F3F6;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 42px;
+}
+.room-book-content{
+    text-align: center;
+}
+.room-book-content h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+.room-book-content p{
+    color: #5E5E5E;
+    font-size: 0.8rem;
+}
+.room-book-grid{
+    /* display: grid;
+    grid-template-columns: 1fr 2fr 1fr; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: 2rem; */
+    margin:2rem 4rem;
+}
+.date h3{
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.check{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+}
+
+.check a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.person h3{
+    margin-bottom: 1rem;
+    font-weight: 700;
+    
+
+}
+
+
+
+.adults-children{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+}
+.adults-children select{
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0 1rem;
+}
+.adults, .children{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.book-now{
+    background-color: #65AEF2;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-top: 2.4rem;
+}
+/* Image Gallary Design */
+.gallary{
+    position: relative;
+    bottom: -64.5rem;
+    background-color: #F3F3F3;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    padding: 3rem 6rem;
+
+
+}
+.image-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.1rem;
+}
+.big-image{
+    position: relative;
+}
+.big-image h3{
+    left: 35%;
+    bottom: 10%;
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    font-size: 2rem;
+}
+.grid{
+    position: relative;
+    transition: transform 0.3s;
+}
+.grid:hover{
+    transform: translateY(-5px);
+}
+.grid h3{
+    position: absolute;
+    bottom: 20%;
+    left: 35%;
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+   
+}
+.grid-2{
+    position: relative;
+}
+.grid-2 h3{
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    width: 60%;
+    text-align: center;
+}
+.grid-3{
+    position: relative;
+}
+.grid-3 h3{
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Offer design */
+.offer{
+    position: relative;
+    bottom: -65rem;
+    width: 100%;
+    background-color: white;
+   
+}
+.offer-content{
+    padding: 4rem 4rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.offer-heading{
+    width: 55%;
+}
+.offer-heading span{
+    color: #65AEF2;
+    font-size: 2rem;
+}
+.offer-heading h2{
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.offer-heading p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 1rem;
+}
+.view-all{
+    color: #65AEF2;
+    font-weight: 700;
+    font-size: 2rem;
+    border: none;
+    background: none;
+    
+}
+.offer-grids{
+    width: 100%;
+    padding: 4rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0 auto;
+    
+}
+.grid-card{
+    background-color: white;
+    padding: 1rem;
+    margin:0 2rem;
+    border-radius: 42px;
+    box-shadow: 0 0 60px #00346540;
+    width: 80%;
+    transition: transform 0.3s;
+    
+    
+}
+.grid-card:hover{
+    transform: translateY(-5px);
+}
+.grid-card img{
+    width: 100%;
+}
+.grid-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.1rem;
+}
+
+.grid-heading h3{
+    font-size: 1.2rem;
+    padding-top: 1rem;
+
+}
+.grid-heading p{
+    font-size: .8rem;
+    margin-top: .3rem;
+}
+.grid-icon{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.grid-price{
+    text-align: center;
+    margin: 1rem auto;
+}
+.grid-price span{
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+/* Footer Section */
+footer{
+    background-color: black;
+    width: 100%;
+    position: relative;
+    margin-top:65rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.left-footer{
+    padding: 3rem;
+}
+.left-footer h3{
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+.newsletter{
+    display: flex;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+    
+}
+.newsletter input{
+    padding: 1rem;
+    border-radius: 12px 0 0 12px;
+    text-align: center;
+    font-style: italic;
+    border: none;
+    font-size: 1.3rem;
+}
+.subscribe{
+    background-color: #65AEF2;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 0 12px 12px 0;
+    font-size: 1.3rem;
+}
+.right-footer{
+    margin-right: 5rem;
+    padding: 4rem;
+}
+.footer-menus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.footer-menu{
+   margin-top: 2rem;
+}
+.footer-menu a{
+    text-decoration: none;
+    color: white;
+    font-size: .8rem;
+    display: block;
+    line-height:2;
+}
+.footer-logo{
+    font-size: 1%;
+    text-align: center;
+}
+.copyright{
+    position: relative;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 2rem;
+}
