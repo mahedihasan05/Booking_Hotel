@@ -8,7 +8,7 @@ html{
 }
 body{
     font-family: "Inter", sans-serif;
-    overflow-x: hidden;
+    
 }
 
 /* Header Design */
@@ -451,7 +451,7 @@ footer{
 
 /* Mobile Responsive */
 
-@media (max-width: 480px){
+@media only screen and (max-width: 480px){
     body{
         overflow-x: hidden;
     }
@@ -538,53 +538,56 @@ footer{
             overflow: hidden;
         }
         }
-        .offer-content{
+    .offer-content{
             display: flex;
             flex-direction: column;
             padding: 1rem;
             align-items: center;
             justify-content: center;
         }
-        .offer-heading{
+    .offer-heading{
             width: 100%;
         }
-        .offer-heading h2{
+    .offer-heading h2{
             font-size: 2rem;
     
         }
-        .offer-grids{
+    .offer-grids{
             padding: 1rem;
             grid-template-columns: 1fr;
         }
-        .grid-card{
+    .grid-card{
             margin: 1rem auto;
             width: 90%;
         }
-        .footer{
+    .footer{
             width: 100%;
             margin: 0 auto;
             display: flex;
             flex-direction:column;
         }
-        .left-footer{
+    .left-footer{
             padding: .5rem;
             width: 90%;
             margin: 0 2rem;
         }
     
-        .newsletter{
+    .newsletter{
             width: 90%;
 
         }
-        .newsletter input{
+    .newsletter input{
             font-size: 1rem;
         }
-        .subscribe{
+    .subscribe{
             font-size: 1rem;
         }
-        .footer-logo{
+    .footer-logo{
             display: none;
         }
-       
+        
+    .right-footer{
+        display: none;
+    }   
 }
 
