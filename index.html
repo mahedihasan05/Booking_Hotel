@@ -13,24 +13,24 @@
     <!-- Header Section -->
     <header>
         <nav>
-            <div class="nav-links left">
-                <a href="#" class="active">Home</a>
-                <a href="#">About</a>
-                <a href="#">Newsletter</a>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#newsletter">Newsletter</a>
             </div>
             <div class="logo">
                 <img src="images/Logo (2).png" alt="Hotel Logo">
             </div>
-            <div class="nav-links right">
-                <a href="#">Rooms</a>
-                <a href="#">Services</a>
-                <a href="#">Pricing</a>
+            <div class="nav-links">
+                <a href="#room">Rooms</a>
+                <a href="#services">Services</a>
+                <a href="#pricing">Pricing</a>
             </div>
         </nav>
     </header>
 
     <!-- Hero section -->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="hero-content">
             <h1>Discover Extraordinary 
                 Comfort in Hotels</h1>
@@ -43,7 +43,7 @@
     </section>
 
     <!-- Book Section -->
-    <section class="book">
+    <section class="book" id="room">
         <div class="room-book">
             <div class="room-book-content">
                 <h2>Book a Room</h2>
@@ -64,7 +64,7 @@
                         <div class="adults">
                             <img src="images/Vector.png" alt="adults">
                             <select name="adults" id="">
-                                <option value="adults">Adults <span>   </span> 2</option>
+                                <option value="adults">Adults 2</option>
                             </select>
                         </div>
                         <div class="children">
@@ -87,8 +87,8 @@
        </section>
 
        <!-- Image Gallary Section -->
-        <section class="gallary">
-            <div class="big-image grid">
+        <section class="gallary" id="services">
+            <div class="big-image">
                 <h3>Rooms</h3>
                 <img src="images/Rectangle 6.png" alt="">
             </div>
@@ -97,15 +97,15 @@
                     <h3>Dining</h3>
                     <img src="images/Rectangle 8.png" alt="">
                 </div>
-                <div class="grid-2 grid">
+                <div class="grid-2">
                     <h3>Conferences & Meetings</h3>
                     <img src="images/Rectangle 9.png" alt="">
                 </div>
-                <div class="grid-2 grid">
+                <div class="grid-2">
                     <h3>Service & Facilities</h3>
                     <img src="images/Rectangle 10.png" alt="">
                 </div>
-                <div class="grid-3 grid">
+                <div class="grid-3">
                     <h3>Wedding Package</h3>
                     <img src="images/Rectangle 11.png" alt="">
                 </div>
@@ -114,7 +114,7 @@
 
 
     <!-- Offer Section -->
-    <section class="offer">
+    <section class="offer" id="pricing">
         <div class="offer-content">
             <div class="offer-heading">
                 <span>Special Offers</span>
@@ -184,7 +184,7 @@
     </section>
 
     <!-- Footer Section -->
-     <footer>
+     <footer id="newsletter">
         <div class="left-footer">
             <h3>Newsletter & Special Promo</h3>
             <div class="newsletter">
@@ -216,7 +216,7 @@
         </div>
         
      </footer>
-     <div class="copyright">
+     <div class="copyright" id="about">
         © Copyright Booking Hotels. All right reserved.
     </div>
 </body>

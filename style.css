@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: "Inter", sans-serif;
 }
@@ -200,6 +203,9 @@ nav{
     border: none;
     cursor: pointer;
     margin-top: 2.4rem;
+}
+.book-now:hover{
+    background-color: #0983f5;
 }
 /* Image Gallary Design */
 .gallary{
@@ -441,3 +447,120 @@ footer{
     text-align: center;
     padding: 2rem;
 }
+
+/* Mobile Responsive */
+
+@media (max-width: 480px){
+    .nav-links{
+        display: none;
+    }
+    .logo{
+        margin: 0 auto;
+    }
+    .hero{
+        max-height: 100vh !important;
+        background-size: 30% cover;
+        width: 100%;
+    }
+    .hero-content h1{
+        font-size: 2rem;
+    
+    }
+    .dot{
+        display: none;
+
+    }
+    .book{
+        width: 100%;
+        padding: 1rem;
+        margin-bottom:3rem ;
+    }
+    .room-book{
+        width: 95%;
+    }
+    .room-book-grid{
+        margin: 1rem 0;
+        display: block;
+        
+    }
+    .check{
+        padding: 0.5rem;
+        margin-bottom: 2rem;
+        & a{
+            font-size: 0.9rem;
+        }
+    }
+    .adults-children{
+        padding: 0.5rem;
+        gap: .5rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .adults-children select{
+        font-size: 0.9rem;
+    }
+    .adults-children img{
+        display: none;
+    }
+    .book-now{
+        margin-left: 3rem;
+
+    }
+    .gallary{
+        width: 100%;
+        padding: 1rem;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .big-image img{
+        width: 22.5rem;
+        height: 100%;
+        margin: 0;
+    }
+    .image-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid, .grid-2,  .grid-3{
+        & img{
+            width: 22.5rem;
+            height: 100%;
+            margin: 0;
+        }
+        }
+        .offer-content{
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            align-items: center;
+            justify-content: center;
+        }
+        .offer-heading{
+            width: 100%;
+        }
+        .offer-heading h2{
+            font-size: 2rem;
+    
+        }
+        .offer-grids{
+            padding: 1rem;
+            grid-template-columns: 1fr;
+        }
+        .grid-card{
+            margin: 1rem auto;
+            width: 100%;
+        }
+        .footer{
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction:column;
+        }
+        .left-footer{
+            padding: .5rem;
+            width: 100%;
+        }
+       
+}
+
