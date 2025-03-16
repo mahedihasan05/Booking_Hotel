@@ -564,7 +564,19 @@ footer{
         }
         .left-footer{
             padding: .5rem;
-            width: 100%;
+            width: 90%;
+            margin: 0 2rem;
+        }
+    
+        .newsletter{
+            width: 90%;
+
+        }
+        .newsletter input{
+            font-size: 1rem;
+        }
+        .subscribe{
+            font-size: 1rem;
         }
         .footer-logo{
             display: none;
