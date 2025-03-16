@@ -8,6 +8,7 @@ html{
 }
 body{
     font-family: "Inter", sans-serif;
+    overflow-x: hidden;
 }
 
 /* Header Design */
@@ -451,6 +452,9 @@ footer{
 /* Mobile Responsive */
 
 @media (max-width: 480px){
+    body{
+        overflow-x: hidden;
+    }
     .nav-links{
         display: none;
     }
