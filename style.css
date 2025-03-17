@@ -68,6 +68,7 @@ nav{
     position: absolute;
     top: 0;
     z-index: -1;
+    overflow: hidden;
 }
 
 .hero-content h1{
@@ -227,6 +228,10 @@ nav{
 }
 .big-image{
     position: relative;
+    transition: transform 0.3s;
+}
+.big-image:hover{
+    transform: translateY(-5px);
 }
 .big-image h3{
     left: 35%;
@@ -244,39 +249,19 @@ nav{
     transform: translateY(-5px);
 }
 .grid h3{
+    width: 100%;
+    padding: 0 1rem;
     position: absolute;
-    bottom: 20%;
-    left: 35%;
-    font-size: 2rem;
-    color: white;
-    font-weight: 700;
-   
-}
-.grid-2{
-    position: relative;
-}
-.grid-2 h3{
-    position: absolute;
-    bottom: 20%;
-    left: 20%;
-    font-size: 2rem;
-    color: white;
-    font-weight: 700;
-    width: 60%;
-    text-align: center;
-}
-.grid-3{
-    position: relative;
-}
-.grid-3 h3{
-    position: absolute;
-    bottom: 20%;
-    left: 10%;
-    font-size: 2rem;
-    color: white;
+    bottom: 3.625rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.8rem;
     font-weight: 700;
     text-align: center;
+    color: white;
 }
+
+
 
 /* Offer design */
 .offer{
